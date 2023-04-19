@@ -1,0 +1,14 @@
+run-name: Deploy to ${{ inputs.deploy_target }} by ${{ github.actor }}
+on:
+  label:
+    types:
+      - created
+  push:
+    branch:
+      - dev
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gradle Build
+      - uses: Raul6469/android-gradle-action@2.0
