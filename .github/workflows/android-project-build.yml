@@ -1,11 +1,5 @@
 run-name: Deploy to ${{ inputs.deploy_target }} by ${{ github.actor }}
-on:
-  label:
-    types:
-      - created
-  push:
-    branch:
-      - dev
+on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
