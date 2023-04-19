@@ -22,3 +22,4 @@ jobs:
           # You can find it on your own machine under `$ANDROID_HOME/license`,
           # and add the file content as a GitHub secret named `$ANDROID_LICENCE`.
           android-licence: ${{ secrets.ANDROID_LICENCE }}
+      - run: ./gradlew test
