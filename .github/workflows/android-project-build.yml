@@ -5,16 +5,13 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name: Gradle Build
-      - uses: Raul6469/android-gradle-action@2.0
+      - uses: sparkfabrik/android-build-action@v1.3.4
         with:
-          # The gradle command you wish to run (required)
-          # Here, `./gradlew test` will be run
-          script: test
-
-          # In some cases, you may need to provide
-          # Android licence agreement id
-          # You can find it on your own machine under `$ANDROID_HOME/license`,
-          # and add the file content as a GitHub secret named `$ANDROID_LICENCE`.
-          android-licence: ${{ secrets.ANDROID_LICENCE }}
-      - run: ./gradlew test
+          project-path: android
+          output-path: my-app.apk
+          browserstack-upload: true
+          browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
+          browserstack-access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          ruby-version: "2.7.5"
+          bundler-version: "2.3.26"
+          fastlane-env: "debug"
