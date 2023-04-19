@@ -8,6 +8,7 @@ espresso-core = "3.5.1"
 lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.0"
 compose-bom = "2023.04.00"
+org-jetbrains-dokka = "1.8.10"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -24,12 +25,13 @@ ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview
 ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.4.1" }
 ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4", version = "1.4.1" }
 material3 = { group = "androidx.compose.material3", name = "material3", version = "1.0.1" }
-#material3 = { group = "androidx.annotation", name = "annotation" }
-#// To use the Java-compatible @Experimental API annotation
+android-documentation-plugin = { group = "org.jetbrains.dokka", name = "android-documentation-plugin", version = "1.8.10" }
+android-base = { group = "org.jetbrains.dokka", name = "dokka-base", version = "1.8.10" }
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "com-android-application" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
+org-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "org-jetbrains-dokka" }
 
 [bundles]
 
