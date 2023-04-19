@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: build
 run-name: Deploy to ${{ inputs.deploy_target }} by ${{ github.actor }}
 on: [push]
 jobs:
@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: sparkfabrik/android-build-action@v1.3.4
         with:
-          project-path: android
+          project-path: ./
           output-path: my-app.apk
           browserstack-upload: true
           browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
@@ -15,3 +15,4 @@ jobs:
           ruby-version: "2.7.5"
           bundler-version: "2.3.26"
           fastlane-env: "debug"
+      - run:
