@@ -36,6 +36,7 @@ android-base = { group = "org.jetbrains.dokka", name = "dokka-base", version = "
 hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "2.45" }
 hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version = "2.45" }
 hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.0.0" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version = "1.5.0-alpha02" }
 
 
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room-version" }
