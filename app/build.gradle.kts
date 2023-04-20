@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.com.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
     alias(libs.plugins.org.jetbrains.dokka)
+    alias(libs.plugins.ksp)
     kotlin("kapt")
     alias(libs.plugins.android.hilt)
 }
@@ -66,10 +67,20 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.android.documentation.plugin)
 
+    // Dependency Injection
     implementation(libs.hilt.navigation)
     implementation(libs.hilt.android)
+    implementation(libs.androidx.ui.text.google.fonts)
     kapt(libs.hilt.compiler)
 
+    // Async Programming
+    implementation(libs.kotlinx.coroutines.android)
+
+    // Data Persistence
+    implementation(libs.room.runtime)
+    ksp(libs.room.compiler)
+
+    // Default
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
