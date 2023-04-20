@@ -1,4 +1,4 @@
-package com.tooensure.travel.ui.theme
+package com.example.template.ui.theme
 
 import android.app.Activity
 import android.os.Build

@@ -1,6 +1,6 @@
-package com.tooensure.travel.repos
+package com.example.template.repos
 
-import com.tooensure.travel.network.AccountApi
+import com.example.template.network.AccountApi
 import javax.inject.Inject
 
 class AccountRepository @Inject constructor(

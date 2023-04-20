@@ -1,9 +1,9 @@
-package com.tooensure.travel.di
+package com.example.template.di
 
-import com.tooensure.travel.network.AccountApi
-import com.tooensure.travel.repos.AccountRepository
-import com.tooensure.travel.repos.FakeAccountRepository
-import com.tooensure.travel.repos.IAccountRepository
+import com.example.template.network.AccountApi
+import com.example.template.repos.AccountRepository
+import com.example.template.repos.FakeAccountRepository
+import com.example.template.repos.IAccountRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

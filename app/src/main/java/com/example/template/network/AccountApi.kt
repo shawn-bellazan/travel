@@ -1,4 +1,4 @@
-package com.tooensure.travel.network
+package com.example.template.network
 
 
 interface AccountApi {

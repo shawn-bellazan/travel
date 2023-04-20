@@ -1,4 +1,4 @@
-package com.tooensure.travel
+package com.example.template
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.tooensure.travel.ui.theme.TravelTheme
+import com.example.template.ui.theme.TravelTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

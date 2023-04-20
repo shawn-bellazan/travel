@@ -1,7 +1,7 @@
-package com.tooensure.travel
+package com.example.template
 
 import androidx.lifecycle.ViewModel
-import com.tooensure.travel.repos.AccountRepository
+import com.example.template.repos.AccountRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

@@ -18,6 +18,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "travel"
+rootProject.name = "androidx"
 include(":app")
  

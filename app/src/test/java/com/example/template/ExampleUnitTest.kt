@@ -1,4 +1,4 @@
-package com.tooensure.travel
+package com.example.template
 
 import org.junit.Test
 
