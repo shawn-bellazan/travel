@@ -7,10 +7,9 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.template.ui.Navigation
 import com.example.template.ui.theme.TravelTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -41,20 +40,20 @@ fun MainContent(content: @Composable () -> Unit) {
     }
 }
 
-@Composable
-fun Navigation() {
-    val viewModel = hiltViewModel<MainViewModel>()
+//@Composable
+//fun Navigation() {
+//    val viewModel = hiltViewModel<MainViewModel>()
+//
+//    AccountScreen(
+//        viewModel
+//    )
+//}
 
-    AccountScreen(
-        viewModel
-    )
-}
-
-@Composable
-fun AccountScreen(
-    viewModel: MainViewModel) {
-    val title = viewModel.get()
-    if (title!!.isNotBlank())
-        Text(text = title)
-    else Text(text = "There's nothing here")
-}
+//@Composable
+//fun AccountScreen(
+//    viewModel: MainViewModel) {
+//    val title = viewModel.get()
+//    if (title!!.isNotBlank())
+//        Text(text = title)
+//    else Text(text = "There's nothing here")
+//}
