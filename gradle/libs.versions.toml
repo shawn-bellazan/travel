@@ -9,6 +9,7 @@ lifecycle-runtime-ktx = "2.6.1"
 activity-compose = "1.7.0"
 compose-bom = "2023.04.00"
 org-jetbrains-dokka = "1.8.10"
+android-hilt = "2.45"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,10 +29,16 @@ material3 = { group = "androidx.compose.material3", name = "material3", version 
 android-documentation-plugin = { group = "org.jetbrains.dokka", name = "android-documentation-plugin", version = "1.8.10" }
 android-base = { group = "org.jetbrains.dokka", name = "dokka-base", version = "1.8.10" }
 
+
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "2.45" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version = "2.45" }
+hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.0.0" }
+
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "com-android-application" }
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 org-jetbrains-dokka = { id = "org.jetbrains.dokka", version.ref = "org-jetbrains-dokka" }
+android-hilt = { id = "com.google.dagger.hilt.android", version.ref = "android-hilt" }
 
 [bundles]
 
